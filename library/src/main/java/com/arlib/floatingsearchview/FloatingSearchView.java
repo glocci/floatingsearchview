@@ -387,6 +387,11 @@ public class FloatingSearchView extends FrameLayout {
         setupViews(attrs);
     }
 
+
+    public SearchInputView getSearchInput(){
+        return mSearchInput;
+    }
+
     private void initDrawables() {
         mMenuBtnDrawable = new DrawerArrowDrawable(getContext());
         mIconClear = Util.getWrappedDrawable(getContext(), R.drawable.ic_clear_black_24dp);
